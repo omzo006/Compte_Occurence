@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <form>
+      <textarea id="txtarea" rows="8" cols="50"></textarea><br><br>
+      <input id="txtrech" type="text" name="" value=""><br><br>
+      <button onclick="compter()"  name="button">Verifier</button><br><br><br>
+
+    </form>
+    <script type="text/javascript">
+      function compter() {
+
+        var chaine = document.getElementById('txtarea').value;
+        var mots = document.getElementById('txtrech').value;
+        var convert = chaine.toLowerCase();
+        var recup = convert.split(mots).length-1;
+    
+
+        alert(recup);
+
+
+      }
+    </script>
+  </body>
+</html>
